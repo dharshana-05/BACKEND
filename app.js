@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json())
 
 //Set up default mongoose connection->mongoose.connect
-mongoose.connect("mongodb://localhost:27017/expense").then(() => {
+mongoose.connect("mongodb+srv://dharshana:dharm4245@cluster0.wujjmnv.mongodb.net/expense").then(() => {
     console.log("Connected to database");
 });
 
