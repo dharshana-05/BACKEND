@@ -3,9 +3,11 @@ var express = require("express");
 //moongose import
 const mongoose = require('mongoose');
 const { v4: uuidv4 } = require("uuid"); // Import uuid
+const cors=require('cors'); // import cors
 const app = express();
 //Middleware
 app.use(express.json())
+app.use(cors())
 
 //Set up default mongoose connection->mongoose.connect
 mongoose.connect("mongodb+srv://dharshana:dharm4245@cluster0.wujjmnv.mongodb.net/expense").then(() => {
